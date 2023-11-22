@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Instrument+Serif&display=swap');
+
+:root {
+    --cor0: #86d1ff;
+    --cor1: #2894E0;
+    --cor2: #03588C;
+    --cor3: #011640;
+    --cor4: #010D26;
+
+    --fonte-titulo: 'DM Serif Display', serif;
+    --fonte-padrao: 'Instrument Serif', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    /*background-color: var(--cor3);*/
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    padding: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+
+header > p {
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 10px;
+    width: 600px;
+    box-shadow: 0px 3px 3px var(--cor3);
+    margin: auto;
+    text-align: center;
+}
+
+nav a {
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-decoration: underline;
+}
+
+main {
+    min-width: 300px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    padding-top: 20px; 
+}
+
+main > div {
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    max-width: 800px;
+    text-align: justify;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Efeito Paralax
+*/
+section.imagem {
+    font-family: var(--fonte-padrao);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+}
+
+section.imagem > p {
+    color: white;
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+section#img01 {
+    background-image: url('../imagens/fundo2.jpg');
+    background-position: right center;
+}
+/*Fim dos testes*/
+
+section > h2 {
+    background-color: var(--cor3);
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section > p {
+    padding: 10px 20px;
+    background-color: var(--cor0);
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+section > p.final {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section > p > img {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+section > p.descricao {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+section.imagens hr{
+    margin: 10px 0;
+    border: none;
+    border-top: 5px solid var(--cor0);
+    width: 800px;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section .foto{
+    border-radius: 8px;
+    border:2px solid var(--cor0);
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .foto img{
+    max-width: 100%;
+}
+
+section .foto .curso{
+    font-size: 18px;
+    color: var(--cor3);
+    margin-top: 15px;
+}
+
+section .foto .info{
+    margin-top: 15px;
+    color: var(--cor3);
+}
+
+section .foto .info .categories{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+section .foto .info .price{
+    padding: 5px;
+    font-size: 28px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    color: var(--cor3);
+}
+
+footer {
+    box-shadow: inset 3px 3px 10px 0px var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+
+    font-size: 16px;
+}
+
+footer .container {
+    font-family: var(--fonte-padrao);
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 8px;
+    margin: auto;
+}
+
+footer h3 {
+    font-size: 1.50em;
+    text-align: center;
+}
+
+footer .info {
+    width: 40%;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+footer .info > p{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+footer .familia, .institucional {
+    width: 30%;
+    margin-top: 10px;
+}
+
+footer .familia > ul{
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 1.8em;
+}
+
+footer .familia > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+footer .familia > ul > li > a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+footer .institucional > ul{
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 1.8em;
+}
+
+footer .institucional > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+footer .institucional > ul > li > a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+footer > p{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+footer > p > a{
+    color: var(--cor1);
+    text-decoration: none;
+}

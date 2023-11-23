@@ -28,20 +28,22 @@
             <h2>Fale conosco</h2>
             <div id="faleconosco">
                 <form action="cadastro.php" method="post" autocomplete="on">
-                    <div id="campos">
+                    <div id="campoNome" class="campos">
                         <label for="inome">Nome:</label>
                         <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
                     </div>
-                    <div  id="campos">
+                    <div  id="campoEmail" class="campos">
                         <label for="iemail">E-mail:</label>
                         <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
                     </div>    
-                    <div  id="campos">
-                        <label for="isexo">Sexo:</label>
-                        <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label>
-                        <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label><br>
+                    <div  id="campoSexo" class="radio">
+                        <fieldset class="field">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="sexo" id="imasc"><label for="imasc" class="rSexo">Masculino</label>
+                            <input type="radio" name="sexo" id="ifem"><label for="ifem" class="rSexo">Feminino</label><br>
+                        </fieldset>
                     </div>
-                    <div  id="campos"></div>
+                    <div  id="campoTexto" class="#"></div>
                         <legend>Deixe seu comentario aqui</legend>
                         <textarea name="comentario" id="icomentario" cols="30" rows="10"></textarea><br>
                     </div>

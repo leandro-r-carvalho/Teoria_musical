@@ -71,22 +71,36 @@ Formulários
 
 div#faleconosco {
     font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     display: block;
     padding: 10px;
+    letter-spacing: 2px;
 }
 
-form > div#campos {
-    display: block;
-    padding: 5px;
+div#faleconosco > label {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
 
+form > div#campoNome, div#campoEmail, div#campoSexo {
+    padding: 5px;
     background-color: #86d1ff;
-    width: 40%;
+    width: 55%;
     height: 30px;
     border-radius: 8px;
     margin: 5px 0px;
 }
 
-form > div#campos input {
+form > div#campoSexo {
+    height: 55px;
+}
+
+form > div#campoSexo fieldset.field {
+    text-align: left;
+    border-colornone;
+}
+
+form > div.campos input {
     background-color: #2894E0;
     font-size: 1em;
     width: 80%;
@@ -94,7 +108,28 @@ form > div#campos input {
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translatey(-4px)
+}
+
+form > div#campoNome input {
+    transform: translate(20px, -4px);
+}
+
+form > div#campoEmail input {
+    transform: translate(7px, -4px);
+}
+
+.rSexo {
+    position: relative;
+    display: inline-flex;
+    place-content: center;
+}
+
+form > div.radio input {
+    background-color: #2894E0;
+    height: 50%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 /*

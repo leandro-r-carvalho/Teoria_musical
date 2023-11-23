@@ -16,33 +16,55 @@
         <p>Ajude a musica alcançar mais pessoas</p>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">Apadrinhar</a>
-            <a href="#">Parceiro</a>
-            <a href="#">Voluntário</a>
+            <a href="#apadrinhar">Apadrinhar</a>
+            <a href="#parceiro">Parceiro</a>
+            <a href="#voluntario">Voluntário</a>
         </nav>
     </header>
 
     <main>
 
-        <section>
+        <section id="home">
             <h2>Fale conosco</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
-            <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
+            <div id="faleconosco">
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div id="campos">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
+                    </div>
+                    <div  id="campos">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
+                    </div>    
+                    <div  id="campos">
+                        <label for="isexo">Sexo:</label>
+                        <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label><br>
+                    </div>
+                    <div  id="campos"></div>
+                        <legend>Deixe seu comentario aqui</legend>
+                        <textarea name="comentario" id="icomentario" cols="30" rows="10"></textarea><br>
+                    </div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
         </section>
     
-        <section>
+        <section id="apadrinhar">
             <h2>Apadrinhar um talento</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
             <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
         </section>
     
-        <section>
+        <section id="parceiro">
             <h2>Seja nosso parceiro</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
             <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
         </section>
 
-        <section>
+        <section id="voluntario">
             <h2>Seja voluntário</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
             <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>

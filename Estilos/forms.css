@@ -66,11 +66,43 @@ nav a:hover {
 /*
 Formulários
 ------------------------------------------------------
-
-
-
 ------------------------------------------------------
 */
+
+div#faleconosco {
+    font-family: var(--fonte-padrao);
+    display: block;
+    padding: 10px;
+}
+
+form > div#campos {
+    display: block;
+    padding: 5px;
+
+    background-color: #86d1ff;
+    width: 40%;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+form > div#campos input {
+    background-color: #2894E0;
+    font-size: 1em;
+    width: 80%;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translatey(-4px)
+}
+
+/*
+Fim dos Formulários
+------------------------------------------------------
+------------------------------------------------------
+*/
+
 
 footer {
     box-shadow: inset 3px 3px 10px 0px var(--cor3);

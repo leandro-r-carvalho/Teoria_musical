@@ -91,15 +91,6 @@ form > div#campoNome, div#campoEmail, div#campoSexo {
     margin: 5px 0px;
 }
 
-form > div#campoSexo {
-    height: 55px;
-}
-
-form > div#campoSexo fieldset.field {
-    text-align: left;
-    border-colornone;
-}
-
 form > div.campos input {
     background-color: #2894E0;
     font-size: 1em;
@@ -118,10 +109,14 @@ form > div#campoEmail input {
     transform: translate(7px, -4px);
 }
 
-.rSexo {
-    position: relative;
+form > div.radio {
     display: inline-flex;
-    place-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+form > div.radio p {
+    display: inline;
 }
 
 form > div.radio input {

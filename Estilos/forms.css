@@ -63,29 +63,29 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/*
-Formulários
-------------------------------------------------------
-------------------------------------------------------
-*/
+/* ** Formulários ** */
 
-div#faleconosco {
+div#formulario {
     font-family: var(--fonte-padrao);
+    font-weight: bold;
     font-size: 1.2em;
+    /*text-align: center;*/
     display: block;
     padding: 10px;
     letter-spacing: 2px;
 }
 
-div#faleconosco > label {
+div#formulario > label {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
 }
 
-form > div#campoNome, div#campoEmail, div#campoSexo {
+/* ** Campos Nome e E-mail ** */
+
+form > div#campoNome, div#campoEmail, div#campoSexo, div#campoTel {
     padding: 5px;
     background-color: #86d1ff;
-    width: 55%;
+    width: 45%;
     height: 30px;
     border-radius: 8px;
     margin: 5px 0px;
@@ -94,10 +94,10 @@ form > div#campoNome, div#campoEmail, div#campoSexo {
 form > div.campos input {
     background-color: #2894E0;
     font-size: 1em;
-    width: 80%;
+    width: 72%;
     height: 100%;
     border: 0px;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 4px;
 }
 
@@ -109,22 +109,82 @@ form > div#campoEmail input {
     transform: translate(7px, -4px);
 }
 
-form > div.radio {
-    display: inline-flex;
-    overflow: hidden;
-    border-radius: 8px;
+form > div#campoTel input {
+    transform: translate(-3px, -4px);
 }
 
-form > div.radio p {
+/*  ** Radio buttons ** */
+
+form > div.radio {
+    display: inline-flex;
+}
+
+form > div.radio .radio_input {
+    display: none;
+}
+
+form > div.radio .radio_label {
+    padding: 5px 24px;
+    margin-bottom: -4px;
+    background: var(--cor1);
+    cursor: pointer;
+    transform: translate(35px, -2px);
+}
+
+form > div.radio #esq_lbl {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+form > div.radio #dir_lbl {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+form > div.radio .radio_label:not(:last-of-type) {
+    border-right: 1px solid var(--cor2);
+}
+
+form > div.radio .radio_input:checked + .radio_label {
+    background: #03588C;
+    
+}
+
+/*  ** TextArea ** */
+.areaTexto > legend {
+    margin-top: 15px;
+}
+
+textarea {
+    background: #86d1ff;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+/*  ** Botão** */
+
+#btn {
     display: inline;
 }
 
-form > div.radio input {
-    background-color: #2894E0;
-    height: 50%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
+#btn input {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    background: #2894E0;
+    box-shadow: 0 0 3px var(--cor4);
+    border-radius: 15px;
+}
+
+#btn input:hover {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: #86d1ff;
+    background: #03588C;
+    box-shadow: 0 0 5px var(--cor4);
 }
 
 /*

@@ -23,10 +23,9 @@
     </header>
 
     <main>
-
         <section id="home">
             <h2>Fale conosco</h2>
-            <div id="faleconosco">
+            <div id="formulario">
                 <form action="cadastro.php" method="post" autocomplete="on">
                     <div id="campoNome" class="campos">
                         <label for="inome">Nome:</label>
@@ -35,25 +34,27 @@
                     <div  id="campoEmail" class="campos">
                         <label for="iemail">E-mail:</label>
                         <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
-                    </div>    
+                    </div>  
+                    <div  id="campoTel" class="campos">
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" minlength="8" maxlength="15" required autocomplete="tel"><br>
+                    </div> 
+                    <!--
                     <div  id="campoSexo" class="radio">
-                        <!--
-                            <fieldset class="field">
-                            <legend>Sexo:</legend>
-                            <input type="radio" name="sexo" id="imasc"><label for="imasc" class="rSexo">Masculino</label>
-                            <input type="radio" name="sexo" id="ifem"><label for="ifem" class="rSexo">Feminino</label><br>
-                        </fieldset>
-                        -->
-                            <p>Sexo:</p>
-                            <input type="radio" name="sexo" id="imasc" class="radio_input"><label for="imasc" class="radio_label">Masculino</label>
-                            <input type="radio" name="sexo" id="ifem" class="radio_input"><label for="ifem" class="radio_label">Feminino</label><br>
+                        <p>Sexo:</p>
+                        <input type="radio" name="sexo" id="imasc" class="radio_input">
+                        <label for="imasc" class="radio_label" id="esq_lbl">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem" class="radio_input">
+                        <label for="ifem" class="radio_label" id="dir_lbl">Feminino</label>
                     </div>
-                    <div  id="campoTexto" class="#"></div>
+                    -->
+                    <div  id="campoTexto" class="areaTexto">
                         <legend>Deixe seu comentario aqui</legend>
-                        <textarea name="comentario" id="icomentario" cols="30" rows="10"></textarea><br>
+                        <textarea name="comentario" id="icomentario" cols="46" rows="10"></textarea><br><br>
                     </div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                    <div  id="btn" class="botao">
+                        <input type="submit" class="btn_enviar" value="Enviar">
+                        <input type="reset" class="btn_limpar" value="Limpar">
                     </div>
                 </form>
             </div>
@@ -61,20 +62,143 @@
     
         <section id="apadrinhar">
             <h2>Apadrinhar um talento</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
-            <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
+            <div id="formulario">
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div id="campoNome" class="campos">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
+                    </div>
+                    <div  id="campoEmail" class="campos">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
+                    </div>  
+                    <div  id="campoTel" class="campos">
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" minlength="8" maxlength="15" required autocomplete="tel"><br>
+                    </div>  
+                    <div  id="campoSexo" class="radio">
+                        <p>Sexo:</p>
+                        <input type="radio" name="sexo" id="imasc" class="radio_input">
+                        <label for="imasc" class="radio_label" id="esq_lbl">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem" class="radio_input">
+                        <label for="ifem" class="radio_label" id="dir_lbl">Feminino</label><br>
+                    </div>
+                    <div class="areaTexto"></div><br><br>
+                    <div  id="btn" class="botao">
+                        <input type="submit" class="btn_enviar" value="Enviar">
+                        <input type="reset" class="btn_limpar" value="Limpar">
+                    </div>
+                </form>
+            </div>
         </section>
     
         <section id="parceiro">
             <h2>Seja nosso parceiro</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
-            <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
+            <div id="formulario">
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div id="campoNome" class="campos">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
+                    </div>
+                    <div  id="campoEmail" class="campos">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
+                    </div>  
+                    <div  id="campoTel" class="campos">
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" minlength="8" maxlength="15" required autocomplete="tel"><br>
+                    </div> 
+
+                    <div id="campoEnsino" class="opcionais">
+                        <fieldset class="tipoEnsino">
+                            <legend>Tipo de ensino</legend>
+                            <input type="checkbox" name="teoria" id="iteoria">
+                            <label for="iteoria">Teoria</label>
+                            <input type="checkbox" name="pratica" id="ipratica">
+                            <label for="ipratica">Prática</label>
+                        </fieldset><br>
+
+                        <fieldset class="instrumentoCorda">
+                            <legend>Instrumentos de cordas</legend>
+                            <input type="checkbox" name="cordas" id="iviolino">
+                            <label for="iviolino">Violino</label><br>
+                            <input type="checkbox" name="cordas" id="iviola">
+                            <label for="iviola">Viola</label><br>
+                            <input type="checkbox" name="cordas" id="ivioloncello">
+                            <label for="ivioloncello">Violoncello</label><br>
+                            <input type="checkbox" name="cordas" id="icbaixo">
+                            <label for="icbaixo">Contra-Baixo</label>
+                        </fieldset><br>
+
+                        <fieldset class="instrumentoSopro">
+                            <legend>Instrumentos de sopro</legend>
+                            <input type="checkbox" name="sopro" id="iclarinete">
+                            <label for="iclarinete">Clarinete</label><br>
+                            <input type="checkbox" name="sopro" id="isax">
+                            <label for="isax">Saxofone</label><br>
+                            <input type="checkbox" name="sopro" id="iflauta">
+                            <label for="iflauta">Flauta</label><br>
+                            <input type="checkbox" name="sopro" id="ioboe">
+                            <label for="ioboe">Oboe</label>
+                        </fieldset><br>
+
+                        <fieldset class="instrumentoMetal">
+                            <legend>Instrumentos de metal</legend>
+                            <input type="checkbox" name="metal" id="itrompete">
+                            <label for="itrompete">Trompete</label><br>
+                            <input type="checkbox" name="metal" id="itrombone">
+                            <label for="itrombone">Trombone</label><br>
+                            <input type="checkbox" name="metal" id="itrompa">
+                            <label for="itrompa">Trompa</label><br>
+                            <input type="checkbox" name="metal" id="ituba">
+                            <label for="ituba">Tuba</label>
+                        </fieldset><br>
+                    </div>
+                    <!--
+                    <div  id="campoSexo" class="radio">
+                        <p>Sexo:</p>
+                        <input type="radio" name="sexo" id="imasc" class="radio_input">
+                        <label for="imasc" class="radio_label" id="esq_lbl">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem" class="radio_input">
+                        <label for="ifem" class="radio_label" id="dir_lbl">Feminino</label><br>
+                    </div>
+                    -->
+
+                    <div class="areaTexto"></div><br><br>
+                    <div  id="btn" class="botao">
+                        <input type="submit" class="btn_enviar" value="Enviar">
+                        <input type="reset" class="btn_limpar" value="Limpar">
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section id="voluntario">
             <h2>Seja voluntário</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sint doloribus praesentium eligendi odit quos aut sit ab quasi dolore, reiciendis deleniti rerum laborum ipsam magni totam mollitia voluptates perspiciatis!</p>
-            <p class="final">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed consequuntur quaerat. Repellat autem vero saepe rerum animi? A officiis voluptate laborum cupiditate ipsam quo nobis placeat! In, ut ratione?</p>
+            <div id="formulario">
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div id="campoNome" class="campos">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
+                    </div>
+                    <div  id="campoEmail" class="campos">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" minlength="8" maxlength="20" required autocomplete="email"><br>
+                    </div>  
+                    <div  id="campoTel" class="campos">
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" minlength="8" maxlength="15" required autocomplete="tel"><br>
+                    </div>  
+                    <div  id="campoTexto" class="areaTexto">
+                        <legend>Deixe seu comentario aqui</legend>
+                        <textarea name="comentario" id="icomentario" cols="46" rows="10"></textarea><br><br>
+                    </div>
+                    <div  id="btn" class="botao">
+                        <input type="submit" class="btn_enviar" value="Enviar">
+                        <input type="reset" class="btn_limpar" value="Limpar">
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section class="imagens">

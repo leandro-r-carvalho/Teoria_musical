@@ -83,8 +83,7 @@ section {
     border-radius: 10px;
 }
 
-/* Efeito Paralax
-*/
+/* Efeito Paralax*/
 section.imagem {
     font-family: var(--fonte-padrao);
     background-size: cover;
@@ -103,7 +102,7 @@ section#img01 {
     background-image: url('../imagens/fundo2.jpg');
     background-position: right center;
 }
-/*Fim dos testes*/
+/* Fim dos testes */
 
 section > h2 {
     background-color: var(--cor3);
@@ -162,7 +161,7 @@ section .container {
 section .foto{
     border-radius: 8px;
     border:2px solid var(--cor0);
-    width: 33%;
+    width: 30%;
     text-align: center;
     margin: 0 8px;
     padding: 20px;

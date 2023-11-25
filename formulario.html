@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
         <section id="home">
             <h2>Fale conosco</h2>
             <div id="formulario">
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="cadastro.php" method="post" autocomplete="on" class="forms">
                     <div id="campoNome" class="campos">
                         <label for="inome">Nome:</label>
                         <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required autocomplete="name"><br>
@@ -152,18 +153,8 @@
                             <label for="itrompa">Trompa</label><br>
                             <input type="checkbox" name="metal" id="ituba">
                             <label for="ituba">Tuba</label>
-                        </fieldset><br>
+                        </fieldset>
                     </div>
-                    <!--
-                    <div  id="campoSexo" class="radio">
-                        <p>Sexo:</p>
-                        <input type="radio" name="sexo" id="imasc" class="radio_input">
-                        <label for="imasc" class="radio_label" id="esq_lbl">Masculino</label>
-                        <input type="radio" name="sexo" id="ifem" class="radio_input">
-                        <label for="ifem" class="radio_label" id="dir_lbl">Feminino</label><br>
-                    </div>
-                    -->
-
                     <div class="areaTexto"></div><br><br>
                     <div  id="btn" class="botao">
                         <input type="submit" class="btn_enviar" value="Enviar">
@@ -190,7 +181,7 @@
                         <input type="tel" name="tel" id="itel" minlength="8" maxlength="15" required autocomplete="tel"><br>
                     </div>  
                     <div  id="campoTexto" class="areaTexto">
-                        <legend>Deixe seu comentario aqui</legend>
+                        <legend>Por que deseja ser um voluntário</legend>
                         <textarea name="comentario" id="icomentario" cols="46" rows="10"></textarea><br><br>
                     </div>
                     <div  id="btn" class="botao">

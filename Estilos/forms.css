@@ -18,58 +18,12 @@
     padding: 0px;
 }
 
-header {
-    /*background-color: var(--cor3);*/
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
-    padding: 10px;
-}
-
-header > h1 {
-    text-align: center;
-    font-family: var(--fonte-titulo);
-    font-size: 4em;
-    margin-bottom: 25px;
-}
-
-header > p {
-    font-family: var(--fonte-titulo);
-    color: var(--cor4);
-    font-weight: normal;
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-nav {
-    padding: 10px;
-    width: 600px;
-    box-shadow: 0px 3px 3px var(--cor3);
-    margin: auto;
-    text-align: center;
-}
-
-nav a {
-    font-family: var(--fonte-titulo);
-    color: var(--cor4);
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-
-nav a:hover {
-    background-color: var(--cor2);
-    color: var(--cor0);
-    text-decoration: underline;
-}
-
 /* ** Formulários ** */
-
 div#formulario {
     font-family: var(--fonte-padrao);
     font-weight: bold;
     font-size: 1.2em;
-    /*text-align: center;*/
+    border: 2px solid var(--cor2);
     display: block;
     padding: 10px;
     letter-spacing: 2px;
@@ -80,25 +34,24 @@ div#formulario > label {
     font-size: 1.2em;
 }
 
-/* ** Campos Nome e E-mail ** */
-
-form > div#campoNome, div#campoEmail, div#campoSexo, div#campoTel {
+/* ** Campos Textbox ** */
+form > div#campoNome, div#campoEmail, div#campoTel {
     padding: 5px;
     background-color: #86d1ff;
     width: 45%;
-    height: 30px;
-    border-radius: 8px;
-    margin: 5px 0px;
+    height: 45px;
+    margin: auto;
 }
 
 form > div.campos input {
     background-color: #2894E0;
     font-size: 1em;
-    width: 72%;
-    height: 100%;
+    width: 73%;
+    height: 80%;
     border: 0px;
     border-radius: 15px;
     padding: 4px;
+    margin-top: 5px;
 }
 
 form > div#campoNome input {
@@ -113,10 +66,15 @@ form > div#campoTel input {
     transform: translate(-3px, -4px);
 }
 
-/*  ** Radio buttons ** */
-
-form > div.radio {
-    display: inline-flex;
+/*  ** Radio ** */
+div#campoSexo {
+    display: block;
+    padding: 5px;
+    background-color: #86d1ff;
+    width: 45%;
+    height: 30px;
+    text-align: left;
+    margin: auto;
 }
 
 form > div.radio .radio_input {
@@ -124,11 +82,11 @@ form > div.radio .radio_input {
 }
 
 form > div.radio .radio_label {
+    display: inline-flex;
     padding: 5px 24px;
-    margin-bottom: -4px;
     background: var(--cor1);
     cursor: pointer;
-    transform: translate(35px, -2px);
+    transform: translate(75px, -28px);
 }
 
 form > div.radio #esq_lbl {
@@ -141,13 +99,8 @@ form > div.radio #dir_lbl {
     border-top-right-radius: 15px;
 }
 
-form > div.radio .radio_label:not(:last-of-type) {
-    border-right: 1px solid var(--cor2);
-}
-
 form > div.radio .radio_input:checked + .radio_label {
-    background: #03588C;
-    
+    background: #03588C; 
 }
 
 /*  ** TextArea ** */
@@ -161,10 +114,14 @@ textarea {
     margin-bottom: 15px;
 }
 
-/*  ** Botão** */
+#campoTexto {
+    text-align: center;
+}
 
+/*  ** Botão** */
 #btn {
-    display: inline;
+    display: block;
+    text-align: center;
 }
 
 #btn input {
@@ -177,6 +134,7 @@ textarea {
     background: #2894E0;
     box-shadow: 0 0 3px var(--cor4);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 #btn input:hover {
@@ -187,101 +145,23 @@ textarea {
     box-shadow: 0 0 5px var(--cor4);
 }
 
-/*
-Fim dos Formulários
-------------------------------------------------------
-------------------------------------------------------
-*/
+/* ** Fieldset and Checks ** */
 
-
-footer {
-    box-shadow: inset 3px 3px 10px 0px var(--cor3);
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-
-    font-size: 16px;
-}
-
-footer .container {
-    font-family: var(--fonte-padrao);
-    width: 800px;
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 8px;
+fieldset {
+    display: block;
     margin: auto;
+    width: 44%;
+    padding: 7px;
+    border-color: var(--cor2);
 }
 
-footer h3 {
-    font-size: 1.50em;
-    text-align: center;
+.tipoEnsino {
+    margin-top: 30px;
 }
 
-footer .info {
-    width: 40%;
-    margin-top: 10px;
-    padding: 0px 10px;
+fieldset > input {
+    width: 40px;
+    height: 18px;
 }
 
-footer .info > p{
-    text-align: justify;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 10px 0;
-}
-
-footer .familia, .institucional {
-    width: 30%;
-    margin-top: 10px;
-}
-
-footer .familia > ul{
-    list-style-type: none;
-    list-style-position: inside;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 0;
-    line-height: 1.8em;
-}
-
-footer .familia > ul > li > a{
-    color: black;
-    text-decoration: none;
-}
-
-footer .familia > ul > li > a:hover{
-    color: var(--cor3);
-    text-decoration: underline;
-}
-
-footer .institucional > ul{
-    list-style-type: none;
-    list-style-position: inside;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 0;
-    line-height: 1.8em;
-}
-
-footer .institucional > ul > li > a{
-    color: black;
-    text-decoration: none;
-}
-
-footer .institucional > ul > li > a:hover{
-    color: var(--cor3);
-    text-decoration: underline;
-}
-
-footer > p{
-    background-color: var(--cor3);
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    padding: 20px 0;
-}
-
-footer > p > a{
-    color: var(--cor1);
-    text-decoration: none;
-}
+/* Fim dos Formulários */

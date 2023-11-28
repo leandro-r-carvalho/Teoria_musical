@@ -46,7 +46,8 @@
 
 @media screen and (max-width: 960px) {
     div.imgFundo {
-        background-image: url('../imagens/fundo1.jpg'); 
+        background-image: url('../imagens/fundo1.jpg');
+        background-position: center center;
         width: 600px;
         height: 400px;
         margin: auto;
@@ -55,6 +56,7 @@
 
     div.imgFundoOrq {
         background-image: url('../imagens/orquestra.png'); 
+        background-position: center center;
         width: 600px;
         height: 400px;
         margin: auto;
@@ -63,6 +65,7 @@
 
     div.imgFundoC {
         background-image: url('../imagens/origem_musica.png'); 
+        background-position: center center;
         width: 600px;
         height: 400px;
         margin: auto;
@@ -105,25 +108,31 @@
         padding: 5px 15px;
     }
 
-    /* Imagem fundo - Pagina inicial*/
     div.imgFundo {
+        background-image: url('../imagens/fundoP.jpg');
+        background-repeat: no-repeat;
         width: 400px;
         height: 270px; 
+        margin: auto;
+        margin-bottom: 15px;
     }
 
-    /* Imagem fundo - Instrumentos*/
     div.imgFundoOrq {
+        background-image: url('../imagens/orquestraP.png'); 
+        background-repeat: no-repeat;
         width: 400px;
         height: 270px;
+        margin: auto;
+        margin-bottom: 15px;
     }
 
-    /* Imagem fundo - Curiosidades*/
     div.imgFundoC {
-        background-image: url('../imagens/origem_musicaP.png');
+        background-image: url('../imagens/origem_musicaP.png'); 
         background-repeat: no-repeat;
-        background-size:cover;
         width: 400px;
         height: 470px;
+        margin: auto;
+        margin-bottom: 15px;
     }
 
     /* Imagem paralax */
@@ -209,6 +218,68 @@
         padding: 15px 0;
         line-height: 1.5em;
     }
+
+
+    /* ** Formulários ** */
+    div#formulario {
+        font-family: var(--fonte-padrao);
+        font-size: 1em;
+        display: block;
+    }
+
+    div#formulario > label {
+        font-family: var(--fonte-padrao);
+        font-size: 1em;
+    }
+
+    /* ** Campos Textbox ** */
+    form > div#campoNome, div#campoEmail, div#campoTel {
+        background-color: #86d1ff;
+        width: 75%;
+        height: 45px;
+    }
+
+    form > div.campos input {
+        background-color: #2894E0;
+        font-size: 1em;
+        width: 73%;
+        height: 80%;
+    }
+
+    /*  ** Radio ** */
+    div#campoSexo {
+        display: block;
+        background-color: #86d1ff;
+        width: 75%;
+        height: 30px;
+    }
+
+    form > div.radio .radio_input {
+        display: none;
+    }
+
+    form > div.radio .radio_label {
+        display: inline-flex;
+        padding: 5px 24px;
+        transform: translate(68px, -23px);
+    }
+
+    form > div.radio .radio_input:checked + .radio_label {
+        background: #03588C; 
+    }
+
+    /* ** Fieldset and Checks ** */
+
+    fieldset {
+        display: block;
+        margin: auto;
+        width: 75%;
+        padding: 7px;
+        border-color: var(--cor2);
+    }
+
+    /* Fim dos Formulários */
+
 
 }
 
